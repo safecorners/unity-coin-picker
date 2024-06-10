@@ -10,16 +10,14 @@ public class Coin : MonoBehaviour
         scoreManager = GameObject.FindObjectOfType<GameManager>();
     }
     void OnCollisionEnter2D(Collision2D other)
-    {
-        Player player = other.gameObject.GetComponent<Player>();
-        if (player != null)
+    { 
+        if (other.gameObject.CompareTag("Player"))
         {
             scoreManager.IncreaseScore();
             Destroy(this.gameObject);
         }
-
-        Floor floor = other.gameObject.GetComponent<Floor>();
-        if (floor != null)
+    
+        if (other.gameObject.CompareTag("Floor"))
         {
             SceneManager.LoadScene("MainScene");
         }
