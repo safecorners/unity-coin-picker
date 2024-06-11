@@ -13,7 +13,11 @@ public class Player : MonoBehaviour
     void Update()
     {
         float h = Input.GetAxis("Horizontal");
-        Vector2 direction = new Vector2(h, 0);
-        rb.velocity = direction * speed;
+        
+        if (h != 0)
+        {
+            Vector2 direction = new Vector2(h, 0);
+            rb.velocity = direction * speed;
+        }
     }
 }

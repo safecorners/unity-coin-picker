@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 151810876070050571}
   - component: {fileID: 4194178228373711823}
   - component: {fileID: 6529927621861995688}
+  - component: {fileID: 975057763855607424}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -172,3 +173,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &975057763855607424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4155090638524772080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f173a7e421154be2aad4f470c5e0ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virtualJoystick: {fileID: 0}
